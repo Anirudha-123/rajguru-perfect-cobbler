@@ -24,7 +24,7 @@ export default function AdminGalleryManager({ onUpdate }) {
 
   const fetchGallery = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/gallery");
+      const res = await fetch("https://rajguru-perfect-cobbler.onrender.com/api/gallery");
       const data = await res.json();
       setItems(data);
     } catch (err) {
