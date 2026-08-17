@@ -66,7 +66,7 @@ export default function BookingModal({ isOpen, onClose }) {
 
       if (response.ok) {
         setSubmitted(true);
-        const ownerPhone = "917499996869";
+        const ownerPhone = "9177418 64763";
 
         const textMessage =
           `*New Shoe Pickup Order!*\n\n` +
