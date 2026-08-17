@@ -46,7 +46,7 @@ export default function App() {
 
   const fetchDynamicGallery = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/gallery");
+      const res = await fetch("https://rajguru-perfect-cobbler.onrender.com/api/gallery");
       const data = await res.json();
       if (data && data.length > 0) {
         setGalleryItems(data);
