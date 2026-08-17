@@ -45,7 +45,7 @@ export default function AdminGalleryManager({ onUpdate }) {
   const handleAddPair = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/gallery", {
+      const res = await fetch("https://rajguru-perfect-cobbler.onrender.com/api/gallery", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -72,7 +72,7 @@ export default function AdminGalleryManager({ onUpdate }) {
     )
       return;
     try {
-      const res = await fetch(`http://localhost:5000/api/gallery/${id}`, {
+      const res = await fetch(`https://rajguru-perfect-cobbler.onrender.com/api/gallery/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {
